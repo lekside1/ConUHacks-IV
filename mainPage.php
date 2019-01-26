@@ -10,7 +10,9 @@ include('header.php');
 
 
 
-<hr/>
+
+
+
 <?php
 // Footer
 include('footer.php');

@@ -22,7 +22,7 @@
 <form class="body-tab">
     <input type="submit" value="Go back"/>
 </form>
-<hr/>
+
 
 <?php
     // Footer

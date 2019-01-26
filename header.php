@@ -6,23 +6,21 @@
     <link href="" rel="stylesheet" type="text/css" />
 </head>
 
-<!-- Photo + clock -->
 <table>
         <tr>
             <td><a href="mainPage.php">
-                    <img alt="chalet"
+                    <img alt="quebec-flag"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_Quebec.svg/2560px-Flag_of_Quebec.svg.png" width="200" height="120" /></a>
             </td>
-            
             <td><h1>Quebec Slang Translator</h1></td>
-            <td> <p id="clock" class="clock"> </p></td> 
+            <td><p id="clock" class="clock"> </p></td> 
         </tr>
 
     <script> 
         showCurrentTime(); // call the function
-
-        // displays the curent time
-        function showCurrentTime() {
+        // displays the current time
+        function showCurrentTime() 
+        {
             var clock = new Date(); 
             // hours
             var clockHour = clock.getHours();
@@ -36,7 +34,8 @@
             }
             // seconds
             var clockSeconds = clock.getSeconds();
-            if (clockSeconds < 10) {
+            if (clockSeconds < 10) 
+            {
                 clockSeconds += "0";
             }
             // time
@@ -46,12 +45,14 @@
             refreshTime(); 
         }
         //  refresh time every second 
-        function refreshTime() {
+        function refreshTime() 
+        {
             var timeout = 1000;
             var time = setTimeout("showCurrentTime()", timeout);
         }
     </script>
-</table>
 
+</table>
+<hr/>
 <?php
     session_start();
