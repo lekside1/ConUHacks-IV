@@ -18,6 +18,7 @@
             <li>An example in French<br />Translation of the example in English</li>
         </ul>
     </dd>
+    <dt>Explicit: <input type="checkbox" name="explicit" disabled/></dt>
 </dl>
 <form class="body-tab">
     <input type="submit" value="Go back"/>
