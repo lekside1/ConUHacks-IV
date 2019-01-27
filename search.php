@@ -6,7 +6,7 @@ include("header.php");
 <?php
 $host = "localhost";
 $username = "root";
-$password = "root";
+$password = "kennan";
 $database = "dictionary";
 $word = $_POST['word'];
 $search_value = $_POST["search"];
