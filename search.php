@@ -12,39 +12,35 @@ $search_value=$_POST["search"];
 
 if(isset($_POST['search']))
 {
+    if(isset($_GET['go']))
+    {
     // no word entered
     if(empty($word)) 
     {
         header('Location: mainPage.php');
         exit();
     }
-    else {
-        $mysqli = new mysqli($host, "root", "", $database);
+    elseif(preg_match("/[A-Z  | a-z]+/", $word))
+    {
+        // connection to database
+        $db = mysqli_connect ($host, "root", "", $database) or die ('Failed to connect to the database because: ' . mysqli_error());
+        $sql = "SELECT term, def FROM slang WHERE term LIKE '%". $word . "%' OR def LIKE '%" . $word . "%'"; 
 
-        // check connection
-        if ($mysqli->connect_errno) {
-            echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-        } 
-        else {
-            $sql="select * from information where term like '%$search_value%'";
-            $res=$mysqli->query($sql); 
-        }
-        $result = $mysqli->query("SELECT term, def, example FROM slang") or die(mysqli_error());
-
-        if(mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_array($result)) {
+        $result = mysqli_query($db, $sql);
+        if(mysqli_num_rows($result) > 0) 
+        {
+            while ($row = mysqli_fetch_array($result)) 
+            {
                 echo $row['term']. ": ". $row['def'];
                 echo "<br/>";
-                echo $row['example'];
-                echo "<br/><br/>";
             }
         }
-        // word doesn't exist
-        else {
+        else {         // word doesn't exist
             echo "Sorry, that word is not in the dictionary";
         }
     }
-    mysqli_close($mysqli);
+    
+    }
 }
 ?>
 

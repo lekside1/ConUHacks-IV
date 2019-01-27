@@ -7,7 +7,7 @@ include('header.php');
 <!---------------------------------------------------------->
 <h2>The Québécois way</h2>
 
-<form action="search.php" method="POST">
+<form action="search.php?go" method="POST">
 <label>
     Please enter a slang word <br/>
     <br/>
