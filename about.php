@@ -5,7 +5,7 @@
 ?>
 
 <p class="about">
-    The <em>Quebec Slang Translator</em> is a website which translates French Quebec 
+    The <em><strong>Quebec Slang Translator</strong></em> is a website which translates French Quebec 
     slang into English so that the English-speaking minority in Quebec is able to better understand
     the French that is often spoken in Quebec. Our purpose is to assure that speakers of all
     languages should be able to communicate with each other in some way or another, and we
