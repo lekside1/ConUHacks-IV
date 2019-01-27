@@ -3,9 +3,9 @@
     $page_title = "Slang"; // Must fetch the slang
     include('header.php');
 ?>
+<!---------------------------------------------------------->
 
-<hr/>
-<h1>Slang</h1>
+<h2>Slang</h2>
 <dl class="body-tab">
     <dt>Translation</dt>
     <dd>Insert a translation of the slang.</dd>
@@ -21,10 +21,10 @@
     <dt>Explicit: <input type="checkbox" name="explicit" disabled/></dt>
 </dl>
 <form class="body-tab">
-    <input type="submit" value="Go back"/>
+    <a href="mainPage.php"><input type="button" value="Go Home"/></a>
 </form>
 
-
+<!---------------------------------------------------------->
 <?php
     // Footer
     include('footer.php');

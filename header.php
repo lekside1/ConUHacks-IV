@@ -10,7 +10,7 @@
         <tr>
             <td><a href="mainPage.php">
                     <img alt="quebec-flag"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_Quebec.svg/2560px-Flag_of_Quebec.svg.png" width="200" height="120" /></a>
+                    src="images/quebec-flag.png" width="200" height="120" /></a>
             </td>
             <td><h1>Quebec Slang Translator</h1></td>
             <td><p id="clock" class="clock"> </p></td> 
