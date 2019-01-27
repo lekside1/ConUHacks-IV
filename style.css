@@ -16,6 +16,10 @@ body {
 
 }
 
+td h1 {
+  text-align: center;
+}
+
 form {
     background-color: lightblue;
     padding: 10px 20px;
