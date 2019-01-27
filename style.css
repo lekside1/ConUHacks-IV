@@ -13,6 +13,15 @@ body {
     background-color: lightblue;
     padding: 10px 20px;
     font-family: Helvetica, Arial, sans-serif;
+
+}
+
+form {
+    background-color: lightblue;
+    padding: 10px 20px;
+	text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+	font-size: 30px;
 }
 
 .about {
@@ -27,6 +36,30 @@ body {
 .home {
 	background-color: #002292;
 	color: red;
+}
+
+h2{
+background-color:darkblue;
+color:white;
+
+
+}
+
+.sbox{
+text-align:center;
+padding-top: 1	0px;
+padding-bottom: 10px;
+margin-bottom: 500px;
+padding-left:50px;	
+padding-right:50px;	
+background-color: darkblue;
+color:white;
+}
+
+#sbar{
+width: 450px;
+line-height: 10px;
+padding: 10px ;
 }
 
 div#foot {
@@ -65,7 +98,7 @@ div#foot {
 
 #clock  {
     float: right;
-    color:green;
+    color:darkblue;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 20px;
