@@ -26,7 +26,7 @@ if (isset($_POST['search']))
         {
             // connection to database
             $db = mysqli_connect($host, $username, $password, $database) or die('Failed to connect to the database because: ' . mysqli_error());
-            $sql = "SELECT term, def, translation, explic, example_fr_1, example_en_1, example_fr_2, example_en_2 FROM slang WHERE term LIKE '%" . $word . "%' OR def LIKE '%" . $word . "%'";
+            $sql = "SELECT term, def, translation, explic, example_fr_1, example_en_1, example_fr_2, example_en_2 FROM slang WHERE term LIKE '%" . $word . "%'"; 
             $result = mysqli_query($db, $sql);
 
             if (mysqli_num_rows($result) > 0) 
