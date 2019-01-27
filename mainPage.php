@@ -7,9 +7,9 @@ include('header.php');
 <!---------------------------------------------------------->
 <h2>The Québécois way</h2>
 
-<form action="search.php" method="POST">
+<form action="search.php?go" method="POST">
 <label>
-    Please enter a slang word <br/>
+    Please enter a slang word you wish to know its meaning <br/>
     <br/>
     <input type="text" name="word" size="30" placeholder="Search for a slang"/>
     <br/><br/>

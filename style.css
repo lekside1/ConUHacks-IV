@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+html, table, footer, label, tr {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: lightblue;
+    padding: 10px 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.about {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: purple;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
+
+.home {
+	background-color: #002292;
+	color: red;
+}
+
+div#foot {
+	position: absolute;
+	bottom:0px;
+  }
+
+#navigator {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+#navigator li{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+#navigator li:last-child{
+   border-right: none;
+}
+
+#navigator li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navigator li a:hover:not(.active){
+  background-color: lightcyan;
+}
+
+#clock  {
+    float: right;
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+table {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0f0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+dt {
+    text-decoration: underline;
+}
