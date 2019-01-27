@@ -14,9 +14,7 @@ body {
     padding: 10px 20px;
     font-family: Helvetica, Arial, sans-serif;
 }
-dt#bold {
-    font:bold;
-}
+
 .about {
   width: 60%;
   margin-left: auto;
@@ -80,4 +78,8 @@ table {
   background-color: #f0f0f0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
+}
+
+dt {
+    text-decoration: underline;
 }

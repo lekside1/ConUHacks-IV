@@ -3,11 +3,10 @@ $page_title = "Search";
 include("header.php");
 ?>
 <!---------------------------------------------------------->
-<p>Welcome to Quebc</p>
 <?php
 $host = "localhost";
 $username = "root";
-$password = "password";
+$password = "root";
 $database = "dictionary";
 $word = $_POST['word'];
 $search_value = $_POST["search"];
@@ -26,7 +25,7 @@ if (isset($_POST['search']))
         elseif (preg_match("/[A-Z  | a-z]+/", $word)) 
         {
             // connection to database
-            $db = mysqli_connect($host, $username, "", $database) or die('Failed to connect to the database because: ' . mysqli_error());
+            $db = mysqli_connect($host, $username, $password, $database) or die('Failed to connect to the database because: ' . mysqli_error());
             $sql = "SELECT term, def, translation, explic, example_fr_1, example_en_1, example_fr_2, example_en_2 FROM slang WHERE term LIKE '%" . $word . "%' OR def LIKE '%" . $word . "%'";
             $result = mysqli_query($db, $sql);
 
@@ -35,16 +34,16 @@ if (isset($_POST['search']))
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<h2>" . $row['term'] . "</h2>";
                     echo "<dl>";
-                    echo "<dt id=\"bold\">Origin</dt>";
+                    echo "<dt>Origin</dt>";
                     echo "<dd>" . $row['def'] . "</dd>";
-                    echo "<dt id=\"bold\">Translation</dt>";
+                    echo "<dt>Translation</dt>";
                     echo "<dd>" . $row['translation'] . "</dd>";
                     if ($row['explic'] == 0) {
                         echo "<dt>Explicit <input type=\"checkbox\" disabled/></dt>";
                     } else {
                         echo "<dt>Explicit <input type=\"checkbox\" disabled checked/></dt>";
                     }
-                    echo "<dt id=\"bold\">Examples</dt>";
+                    echo "<dt>Examples</dt>";
                     echo "<ul><li>" . $row['example_fr_1'] . "<br/>" . $row['example_en_1'] . "</li>";
                     echo "<li>" . $row['example_fr_2'] . "<br/>" . $row['example_en_2'] . "</li></ul>";
                     echo "</dl>";
