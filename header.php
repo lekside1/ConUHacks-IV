@@ -38,7 +38,7 @@
                 clockSeconds += "0";
             }
             // time
-            var clockTime = clock.getDate() + "/" + (clock.getMonth()+1) + "/" + (clock.getYear()+1900) + " - " + (clockHour/10) + ":" + clockMin + ":" + clockSeconds; 
+            var clockTime = clock.getDate() + "/" + (clock.getMonth()+1) + "/" + (clock.getYear()+1900) + " - " + (clockHour) + ":" + clockMin + ":" + clockSeconds; 
             
             document.getElementById("clock").innerHTML = clockTime;
             refreshTime(); 

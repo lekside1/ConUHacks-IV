@@ -44,14 +44,14 @@ CREATE TABLE `slang` (
 --
 
 INSERT INTO `slang` (`term`, `def`, `translation`, `explic`, `example_fr_1`, `example_en_1`, `example_fr_2`, `example_en_2`) VALUES
-('Moé', 'Contraction of \"moi\", used to refer to the speaker as the object of the sentence.', 'Me', 0, '\"Moé, chuis tranquille!\"', '\"I am tranquil!\" (with emphasis)', '\"Touche-moé pas!\"', '\"Don\'t touch me!\"'),
-('Abreuvoir', 'Originates from the combination of \"abreuver\" and the suffix \"-oir\" in the 18th century.', 'Drinking fountain', 0, '\"Je vais boire de l\'eau à l\'abreuvoir.\"', '\"I will go drink water at the drinking fountain.\"', '\"Ammène-moi devant l\'abreuvoir.\"', '\"Bring me in front of the drinking fountain.\"'),
-('Frencher', 'Borrowed and contracted from the English \"French kiss\".', 'French kiss', 0, '\"J\'ai frenché ma blonde.\"', '\"I french kissed my girlfriend.\"', '\"Frencher, c\'est dégoutant\"', '\"French kissing, that is disgusting.\"'),
+('Mo&eacute', 'Contraction of \"moi\", used to refer to the speaker as the object of the sentence.', 'Me', 0, '\"Mo&eacute, chuis tranquille!\"', '\"I am tranquil!\" (with emphasis)', '\"Touche-mo&eacute pas!\"', '\"Don\'t touch me!\"'),
+('Abreuvoir', 'Originates from the combination of \"abreuver\" and the suffix \"-oir\" in the 18th century.', 'Drinking fountain', 0, '\"Je vais boire de l\'eau &agrave l\'abreuvoir.\"', '\"I will go drink water at the drinking fountain.\"', '\"Amm&egravene-moi devant l\'abreuvoir.\"', '\"Bring me in front of the drinking fountain.\"'),
+('Frencher', 'Borrowed and contracted from the English \"French kiss\".', 'French kiss', 0, '\"J\'ai french&eacute ma blonde.\"', '\"I french kissed my girlfriend.\"', '\"Frencher, c\'est d&eacutegoutant\"', '\"French kissing, that is disgusting.\"'),
 ('Niaiser', 'Originates from the combination of \"niais\" (dumb) and the verb suffix \"-er\".', 'Joking/Fooling around', 0, '\"Arrête de niaiser!\"', '\"Stop fooling around!\"', '\"Est-ce que tu me niaises?\"', '\"Are you kidding me?\"'),
-('Frette', 'Contraction of \"froid\".', 'Cold', 0, '\"Il fait frette ici.\"', '\"It is cold in here.\"', '\"Au Québec, il fait frette.\"', '\"In Quebec, it is cold.\"'),
+('Frette', 'Contraction of \"froid\".', 'Cold', 0, '\"Il fait frette ici.\"', '\"It is cold in here.\"', '\"Au Qu&eacutebec, il fait frette.\"', '\"In Quebec, it is cold.\"'),
 ('Chum', 'Borrowed from the English \"chum\".', 'Boyfriend', 0, '\"J\'ai vu mon chum hier.\"', '\"I saw my boyfriend yesterday.\"', '\"Malheureusement, je n\'aurais pas de chum pendant longtemps.\"', '\"Sadly, I won\'t have a boyfriend for a long time.\"'),
-('Blonde', 'Unknown.', 'Girlfriend', 0, '\"Ta blonde est belle.\"', '\"Your girlfriend is beautiful.\"', '\"Il est sorti avec sa blonde la semaine passée.\"', '\"He went out with his girlfriend last week.\"'),
-('Tabarnak', 'Profanity which comes from \"tabernacle\", \r\na fixed, locked box in which, in some Christian churches, the Eucharist is \"reserved\" (stored).', 'F*ck', 1, '\"Tabarnak, j\'ai oublié mon sac à dos.\"', '\"F*ck, I forgot my bag.\"', '\"Je m\'en tabarnak.\"', '\"I don\'t give a f*ck.\"');
+('Blonde', 'Unknown.', 'Girlfriend', 0, '\"Ta blonde est belle.\"', '\"Your girlfriend is beautiful.\"', '\"Il est sorti avec sa blonde la semaine pass&eacutee.\"', '\"He went out with his girlfriend last week.\"'),
+('Tabarnak', 'Profanity which comes from \"tabernacle\", \r\na fixed, locked box in which, in some Christian churches, the Eucharist is \"reserved\" (stored).', 'F*ck', 1, '\"Tabarnak, j\'ai oublié mon sac &agrave dos.\"', '\"F*ck, I forgot my bag.\"', '\"Je m\'en tabarnak.\"', '\"I don\'t give a f*ck.\"');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
