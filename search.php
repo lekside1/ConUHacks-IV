@@ -24,11 +24,11 @@ while ($row = $res->fetch_assoc()) {
 
 echo $myArray[0]['term'];
 
-echo $myArray[0]['def'];
+echo $myArray[0]['def']; 
 
 // for ($i = 0; $i<2; $i++ ) {
 // 	echo $myArray[$i]['term'];
-// }
+//}
 ?>
 
 
