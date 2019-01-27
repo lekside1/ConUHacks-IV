@@ -9,7 +9,7 @@
 <table>
         <tr>
             <td><a href="mainPage.php">
-                    <img alt="quebec-flag"
+                    <img alt="quebec-flag" title="Fleurdelisé (the Lily-Flowered)"
                     src="images/quebec-flag.png" width="100" height="60" /></a>
             </td>
             <td><h1>Quebec Slang Translator</h1></td>

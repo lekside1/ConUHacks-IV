@@ -1,12 +1,13 @@
 <br/><br/><br/>
 <hr/>
     <div>   
-        <table>
-        <tr>
-            <td><a href="about.php"> About </a> </td>
-            <td><a href="credits.php">Credits </a> </td>
-            <td><p id="clock"></p></td> 
-        </tr>
+        <ul>
+            <li><a href="mainPage.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="credits.php">Credits</a></li>
+            <li><p id="clock"></p></li>
+        </ul>
+
         <script>
         showCurrentTime(); // call the function
         // displays the current time
@@ -42,7 +43,6 @@
             var time = setTimeout("showCurrentTime()", timeout);
         }
         </script>
-        </table>
     </div>
 </body>
 </html>
