@@ -1,13 +1,13 @@
-<br/><br/><br/>
-<hr/>
-    <div>   
-        <ul>
-            <li><a href="mainPage.php">Home</a></li>
+    <div id="foot">
+   
+        <u id="navigator">
+            <li id="home"><a href="mainPage.php">Home</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="credits.php">Credits</a></li>
-            <li><p id="clock"></p></li>
         </ul>
-
+        
+        <p id="clock"></p>
+        
         <script>
         showCurrentTime(); // call the function
         // displays the current time
@@ -31,7 +31,7 @@
                 clockSeconds += "0";
             }
             // time
-            var clockTime = clock.getDate() + "/" + (clock.getMonth()+1) + "/" + (clock.getYear()+1900) + " - " + (clockHour-12) + ":" + clockMin + ":" + clockSeconds; 
+            var clockTime = clock.getDate() + "/" + (clock.getMonth()+1) + "/" + (clock.getYear()+1900) + " - " + (clockHour/10) + ":" + clockMin + ":" + clockSeconds; 
             
             document.getElementById("clock").innerHTML = clockTime;
             refreshTime(); 
